@@ -1,0 +1,205 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    text-align: center;
+    font-family: Open Sans, sans-serif;
+   background: linear-gradient(to right,
+    #8a71c9,
+    #7c61c4,
+    #6e50be,
+    #5e3fb3,
+    #4d2ea8,
+    #3c1d9d,
+    #2d137f,
+    #1e0a61,
+    #000000
+  );
+    color: #ffffff;
+    margin: 0;
+}
+h1{
+    font-size: 3.75rem;
+    font-weight: 500;
+    color: #1f0250;
+    margin-top: 5rem;
+}
+h3{
+    font-size: 1.375rem;
+    font-style: italic;
+}
+p{
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+img{
+    width: 100%;
+    border-radius: 50px;
+}
+.titulo-verde{
+   color: #04ff9f;
+}
+
+.titulo-vermelho{
+   color: #FF9E9E;
+}
+
+.titulo-laranja{
+   color: #ffe36d;
+}
+
+section{
+    width: 60%;
+    margin: 0 auto;
+}
+section section{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+    line-height: 2;
+    padding-left: 0; 
+    margin: 0;
+}
+a{
+     text-decoration: none;
+     color:  #99ffff;
+    font-weight: 600;
+}
+.principal a{
+    color: #FFF;
+    text-decoration: none;
+    font-weight: normal;
+    padding: 5px;
+
+}
+.principal a:hover{
+    background-color: #7c61c4;   
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.principal {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    height: 80px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.principal li{
+       display: inline-block;
+       line-height: 2.5;
+       margin: 0 10px;
+}
+button{
+    background-color:#99ffff ;
+    border: 1px solid transparent;
+    padding: 2px 20px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 10px;
+}
+
+form{
+    margin-bottom: 30px;
+}
+
+.avatar{
+    height: 62px;
+    width: 62px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.ada{
+    display: flex;
+    align-items: center;
+    text-align: start;  
+    margin-bottom: 5rem;
+ }
+.ada p{
+    font-size: 1.375rem;
+    padding-right: 2rem;
+}
+
+.inf{
+    display: flex;
+    align-items: center;
+    text-align: start;
+}
+
+#infancia p{
+    text-align: start;
+}
+
+.inf img{
+    margin-right: 3rem;
+    width: 35%;
+    height: auto;
+}
+#juventude img{
+    width: 30%;
+    height: auto;
+    margin-left: 3rem;
+    margin-right: 0;
+}
+
+#juventude p{
+    text-align: start;
+}
+.topicos ul{
+    display: flex;
+    justify-content: end;
+}
+.logo span{
+    margin-left: 1rem;
+}
+/*.formulario form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    text-align: start;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 4px;
+    margin-bottom: 1rem;
+}*/
+
+form{
+background-color: rgba(0, 0, 0, 0.4); /* levemente translúcido */
+  border: 1px solid rgba(255, 255, 255, 0.15); /* borda discreta */
+  border-radius: 12px;
+  padding: 30px;
+  color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+input{
+height: 20px;
+border-radius: 5px;
+border: none;
+}
+
+@media (max-width: 480px) {
+    .ada {
+        flex-direction: column;
+    }
+    .inf{
+        flex-direction: column-reverse;
+    }
+    .inf img{
+        width: 100%;
+        margin-right: 0;
+    }
+    #juventude img{
+         width: 100%;
+        margin-left: 0;
+    }
+}
