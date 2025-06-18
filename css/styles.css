@@ -241,8 +241,15 @@ border: none;
 }
 
 @media (max-width: 480px) {
+    p{
+        text-align: center !important;
+    }
     .ada {
         flex-direction: column;
+        margin-bottom: 0;
+    }
+    section{
+        width: 80%;
     }
     .inf{
         flex-direction: column-reverse;
@@ -254,5 +261,11 @@ border: none;
     #juventude img{
          width: 100%;
         margin-left: 0;
+    }
+    form{
+        text-align: right;
+    }
+    input{
+        margin-bottom: 3px;
     }
 }
