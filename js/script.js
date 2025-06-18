@@ -8,3 +8,17 @@ function validaFormulario() {
         alert("Por favor, preencha os campos nome, email e telefone!")
     }
 }
+
+const btnMenu = document.getElementById('btnMenu');
+  const menu = document.getElementById('menu');
+  const links = menu.querySelectorAll('a');
+
+  btnMenu.addEventListener('click', () => {
+    menu.classList.toggle('show');
+});
+
+ links.forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('show');
+    });
+  });
