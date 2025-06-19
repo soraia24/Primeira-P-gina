@@ -241,6 +241,9 @@ border: none;
 }
 
 @media (max-width: 480px) {
+    h1{
+        margin: 2rem 0 0 0;
+    }
     p{
         text-align: center !important;
     }
